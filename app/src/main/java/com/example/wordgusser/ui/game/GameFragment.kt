@@ -27,11 +27,12 @@ class GameFragment : Fragment() {
         binding.gameViewModel = viewModel
         binding.setLifecycleOwner(this)
 
-//        viewModel.gameComplete.observe(viewLifecycleOwner, Observer { iscComplete ->
-//            if(iscComplete){
-//                findNavController().navigate()
-//            }
-//        })
+        viewModel.gameComplete.observe(viewLifecycleOwner, Observer { iscComplete ->
+            if(iscComplete){
+                findNavController().navigate(R.id.action_gameFragment_to_scoreFragment)
+                viewModel.eventGameComplete()
+            }
+        })
 
 
         return binding.root

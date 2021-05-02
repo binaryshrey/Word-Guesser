@@ -9,4 +9,6 @@
     <string name="got_it">Got It</string>
     <string name="the_word_is">The word is ..</string>
     <string name="currentscore">CurrentScore : %d</string>
+    <string name="your_final_score">Your Final Score :</string>
+    <string name="play_again">PLAY AGAIN</string>
 </resources>
