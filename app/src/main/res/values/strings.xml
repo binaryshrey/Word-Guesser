@@ -8,4 +8,5 @@
     <string name="skip">Skip</string>
     <string name="got_it">Got It</string>
     <string name="the_word_is">The word is ..</string>
+    <string name="currentscore">CurrentScore : %d</string>
 </resources>
