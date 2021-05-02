@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="scoreViewModel"
+            type="com.example.wordgusser.ui.score.ScoreViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,6 +34,7 @@
             android:layout_marginBottom="@dimen/dimen_16"
             android:textSize="@dimen/dimen_24"
             android:textStyle="bold"
+            android:text="@{String.valueOf(scoreViewModel.score)}"
             app:layout_constraintBottom_toTopOf="@+id/playAgain_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_24"
             android:text="@string/play_again"
+            android:onClick="@{() -> scoreViewModel.onPlayAgain()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

@@ -29,7 +29,8 @@ class GameFragment : Fragment() {
 
         viewModel.gameComplete.observe(viewLifecycleOwner, Observer { iscComplete ->
             if(iscComplete){
-                findNavController().navigate(R.id.action_gameFragment_to_scoreFragment)
+                val currentScore = viewModel.score.value ?: 0
+                findNavController().navigate(GameFragmentDirections.actionGameFragmentToScoreFragment(currentScore))
                 viewModel.eventGameComplete()
             }
         })
