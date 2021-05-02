@@ -45,7 +45,7 @@
             android:layout_height="@dimen/dimen_56"
             android:layout_marginStart="@dimen/dimen_32"
             android:layout_marginEnd="@dimen/dimen_32"
-            android:layout_marginBottom="@dimen/dimen_32"
+            android:layout_marginBottom="@dimen/dimen_24"
             android:text="@string/play"
             app:cornerRadius="@dimen/dimen_32"
             app:layout_constraintBottom_toBottomOf="parent"
