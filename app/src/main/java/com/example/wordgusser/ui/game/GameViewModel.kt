@@ -62,13 +62,13 @@ class GameViewModel : ViewModel() {
     }
 
     fun onNext(){
-        _score.value = _score.value?.plus(1)
         nextWord()
+        _score.value = _score.value?.plus(1)
     }
 
     fun onSkip(){
-        _score.value = _score.value?.minus(1)
         nextWord()
+        _score.value = _score.value?.minus(1)
     }
 
     fun eventGameComplete(){
